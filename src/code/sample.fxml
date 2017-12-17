@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane fx:id="gridPane" alignment="center" hgap="10" styleClass="background" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="code.Controller">
+   <children>
+      <VBox alignment="CENTER" prefHeight="480.0" prefWidth="640.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/globe.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="75.0" />
+               </VBox.margin>
+            </ImageView>
+            <TextField fx:id="usernameField" maxHeight="30.0" maxWidth="225.0" minHeight="30.0" minWidth="225.0" promptText="username" styleClass="control">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin></TextField>
+            <PasswordField fx:id="passField" maxHeight="30.0" maxWidth="225.0" minHeight="30.0" minWidth="225.0" promptText="password" styleClass="control">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin></PasswordField>
+            <HBox alignment="CENTER">
+               <children>
+                  <Button fx:id="loginButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" styleClass="control" text="Login">
+                     <HBox.margin>
+                        <Insets right="2.5" />
+                     </HBox.margin></Button>
+                  <Button fx:id="registerButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" styleClass="control" text="Register">
+                     <HBox.margin>
+                        <Insets left="2.5" />
+                     </HBox.margin></Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <Button fx:id="exitButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="225.0" styleClass="control" text="Exit">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="25.0" />
+               </VBox.margin></Button>
+         </children>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </VBox>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
